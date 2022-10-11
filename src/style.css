@@ -1,0 +1,91 @@
+@import url(//db.onlinewebfonts.com/c/290cf55f56a0151d0b72d040d1973e6d?family=Andromelia_PersonalUseOnly);
+@import url(//db.onlinewebfonts.com/c/d39b9dbcc80c5331b2842cb582b4c210?family=nemoddak12);
+@import url(//db.onlinewebfonts.com/c/1eb6ff10cdf1e50f3fb4af35339fd481?family=United+Kingdom);
+
+.container{
+    background-image: linear-gradient(to top,black,rgb(28, 28, 100));
+}
+div.title > h2{
+    font-family: "Andromelia_PersonalUseOnly";
+    color: aliceblue;
+    font-size: 2.5em;
+    animation: titleAnime 0.4s;
+    text-align: center;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+div.searchZone{
+    background-color: darkgrey;
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.726);
+}
+div.searchZone > input{
+    background-color: transparent;
+    border: none;
+    font-size: 1.8em;
+    color: aliceblue;
+    outline: none;
+    height: 40px;
+    font-family: "nemoddak12",sans-serif;
+}
+div.searchZone > input::placeholder{
+    font-family: "nemoddak12",sans-serif;
+    color: azure;
+}
+button{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+button:hover{
+    color: whitesmoke;
+    transform: scale(1.2);
+}
+@keyframes titleAnime {
+    from{
+        transform: translateY(500px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.cepBox{
+   background-color: azure; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 500px;
+   border-radius: 10px;
+}
+.cepBox h2{
+    color: black;
+    font-family: 'United Kingdom', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cepBox span{
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+@media (max-width:500px){
+    .cepBox{
+        width: 420px;
+        transition: 0.7s;
+    }
+    .cepBox h2{
+        font-size: 1.4em;
+        transition: 0.7s;
+    }
+}
